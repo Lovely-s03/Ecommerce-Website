@@ -8,6 +8,7 @@ import { useCart } from '../Context/CartContext'
 import { CgClose } from 'react-icons/cg'
 import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 import ResponsiveMenu from './ResponsiveMenu'
+import { FaXmark } from 'react-icons/fa6'
 
 const Navbar = ({location,getLocation,  openDropdown, setOpenDropdown}) => {
 const {cartItem} =useCart();
@@ -83,7 +84,7 @@ const [openNav , setOpenNav] = useState(false)
   
     </div>
     {
-      openNav ? <HiMenuAlt3 className='h-7 w-7  md:hidden' onClick={()=>setOpenNav(false)}/>:<HiMenuAlt1  className='h-7 w-7  md:hidden' onClick={()=>setOpenNav(true)}/>
+      openNav ? <FaXmark className='h-7 w-7  md:hidden' onClick={()=>setOpenNav(false)}/>:<HiMenuAlt1  className='h-7 w-7  md:hidden' onClick={()=>setOpenNav(true)}/>
     }
     </nav>
    
