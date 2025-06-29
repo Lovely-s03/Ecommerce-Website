@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { getData } from '../Context/DataContext'
+import { getData } from '../context/DataContext'
 import { useNavigate } from 'react-router-dom'
 
 const Category = () => {
@@ -18,8 +18,6 @@ const Category = () => {
 
   
     const categoryOnlyData = getUniqueCategory(data, "category")
-
-
   
   return (
     <div className='bg-[#101829]'>
