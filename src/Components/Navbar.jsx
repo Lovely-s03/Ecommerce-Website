@@ -20,7 +20,7 @@ const [openNav , setOpenNav] = useState(false)
   <div className='bg-white py-3 shadow-2xl px-4 md:px-0 sticky top-0 left-0 z-50 '>
  <div className='max-w-6xl mx-auto flex justify-between items-center'>
      <div className='flex gap-7 items-center'>
-                    <Link to={'/'}><h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>Z</span>aptro</h1></Link>
+                    <Link to={'/'}><h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>M</span>ockify</h1></Link>
                     <div className='md:flex gap-1 cursor-pointer text-gray-700 items-center hidden'>
                         <MapPin className='text-red-500' />
                         <span className='font-semibold '>{location ? <div className='-space-y-2'>
