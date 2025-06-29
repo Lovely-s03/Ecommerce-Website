@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import { getData } from '../Context/DataContext'
 import FilterSection from '../Components/FilterSection'
 import Loading from "../assets/Loading4.webm"
-import ProductCard from '../components/ProductCard'
-import Pagination from '../components/Pagination'
+import Pagination from '../Components/Pagination'
 import Lottie from 'lottie-react'
 import notfound from "../assets/notfound.json"
-import MobileFilter from '../components/MobileFilter'
+import MobileFilter from '../Components/MobileFilter'
+import ProductCard from '../Components/ProductCard'
 
 const Products = () => {
   const { data, fetchAllProducts } = getData()
@@ -64,7 +64,7 @@ const Products = () => {
                       <div className='grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-7 mt-10'>
                         {
                           filteredData?.slice(page * 8 - 8, page * 8).map((product, index) => {
-                            return <ProductCard key={index} product={product} />
+                            return <ProductCard key={index} product={product}/>
                           })
                         }
                       </div>
