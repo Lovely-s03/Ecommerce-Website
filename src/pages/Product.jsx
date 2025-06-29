@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { getData } from '../Context/DataContext'
-import FilterSection from '../components/FilterSection'
+import FilterSection from '../Components/FilterSection'
 import Loading from "../assets/Loading4.webm"
 import ProductCard from '../components/ProductCard'
 import Pagination from '../components/Pagination'
