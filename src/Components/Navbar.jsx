@@ -18,11 +18,11 @@ const [openNav , setOpenNav] = useState(false)
         setOpenDropdown(!openDropdown)
     }
   return (
-  <div className='bg-white py-3 shadow-2xl px-4 md:px-0 sticky top-0 left-0 z-50 '>
+  <div className='bg-white py-3 shadow-2xl px-4 lg:px-0 sticky top-0 left-0 z-50 '>
  <div className='max-w-6xl mx-auto flex justify-between items-center'>
      <div className='flex gap-7 items-center'>
                     <Link to={'/'}><h1 className='font-bold text-3xl'><span className='text-red-500 font-serif'>M</span>ockify</h1></Link>
-                    <div className='md:flex gap-1 cursor-pointer text-gray-700 items-center hidden'>
+                    <div className='lg:flex gap-1 cursor-pointer text-gray-700 items-center hidden'>
                         <MapPin className='text-red-500' />
                         <span className='font-semibold '>{location ? <div className='-space-y-2'>
                             <p>{location.county}</p>
@@ -38,7 +38,7 @@ const [openNav , setOpenNav] = useState(false)
                     }
                 </div>
  <nav className='flex gap-7 items-center'>
-      <ul className='md:flex gap-7 items-center text-xl font-semibold hidden'>
+      <ul className='lg:flex gap-7 items-center text-xl font-semibold hidden'>
      
   <NavLink
     to="/"
@@ -73,7 +73,7 @@ const [openNav , setOpenNav] = useState(false)
   {cartItem.length}
          </span>
         </Link>
- <div className='hidden md:block'>
+ <div className='hidden lg:block'>
     
       <SignedOut>
         <SignInButton className="bg-red-500 text-white px-3 py-1 rounded-md cursor-pointer"/>
@@ -84,7 +84,7 @@ const [openNav , setOpenNav] = useState(false)
   
     </div>
     {
-      openNav ? <FaXmark className='h-7 w-7  md:hidden' onClick={()=>setOpenNav(false)}/>:<HiMenuAlt1  className='h-7 w-7  md:hidden' onClick={()=>setOpenNav(true)}/>
+      openNav ? <FaXmark className='h-7 w-7  lg:hidden' onClick={()=>setOpenNav(false)}/>:<HiMenuAlt1  className='h-7 w-7  lg:hidden' onClick={()=>setOpenNav(true)}/>
     }
     </nav>
    
